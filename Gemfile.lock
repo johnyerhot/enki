@@ -112,6 +112,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.17.2)
     multi_json (1.0.4)
+    newrelic_rpm (3.3.4.1)
     nokogiri (1.5.0)
     nokogiri (1.5.0-java)
     open_id_authentication (1.1.0)
@@ -219,6 +220,7 @@ DEPENDENCIES
   jquery-rails
   jruby-openssl
   lesstile
+  newrelic_rpm
   nokogiri (~> 1.5.0)
   open_id_authentication
   rack-openid
