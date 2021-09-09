@@ -53,12 +53,12 @@ gem 'open_id_authentication'
 # and rake tasks are available in development mode:
 group :test do
   gem 'database_cleaner'
-  gem 'cucumber-rails',    :require => false
-  gem 'cucumber-websteps', :require => false
+  gem 'cucumber-rails', '>= 1.2.1', :require => false
+  gem 'cucumber-websteps', '>= 0.9.0', :require => false
   gem 'factory_girl'
   gem 'rspec'
-  gem 'nokogiri', '~> 1.5.0'
-  gem 'webrat'
+  gem 'nokogiri', '~> 1.8.2'
+  gem 'webrat', '>= 0.7.3'
 end
 
 group :development, :test do
