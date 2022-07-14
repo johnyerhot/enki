@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '5.2.8.1'
 gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
@@ -43,7 +43,7 @@ gem 'rack-openid', :require => 'rack/openid'
 gem 'aaronh-chronic', :require => 'chronic' # Fixes for 1.9.2
 gem 'coderay'
 gem 'lesstile'
-gem 'formtastic'
+gem 'formtastic', '>= 2.1.0'
 gem 'will_paginate', '~> 3.0.2'
 gem 'exception_notification', '~> 2.5.2'
 gem 'open_id_authentication'
