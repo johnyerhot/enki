@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
-gem 'newrelic_rpm'
+gem 'rails', '6.1.7.3'
+gem 'newrelic_rpm', '>= 3.5.3.25'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -9,10 +9,10 @@ gem 'newrelic_rpm'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', '~> 5.0.8'
+  gem 'coffee-rails', '~> 4.2.2'
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier', '>= 2.7.2'
 end
 
 platforms :ruby do
@@ -25,7 +25,7 @@ platforms :jruby do
   gem 'jruby-openssl'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.4.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -37,14 +37,14 @@ gem 'jquery-rails'
 # gem 'ruby-debug'
 
 # Bundle the extra gems:
-gem 'RedCloth', '~> 4.2.9', :require => 'redcloth'
-gem 'ruby-openid', :require => 'openid'
+gem 'RedCloth', '~> 4.3.0', :require => 'redcloth'
+gem 'ruby-openid', '>= 2.2.2', :require => 'openid'
 gem 'rack-openid', :require => 'rack/openid'
 gem 'aaronh-chronic', :require => 'chronic' # Fixes for 1.9.2
 gem 'coderay'
 gem 'lesstile'
-gem 'formtastic'
-gem 'will_paginate', '~> 3.0.2'
+gem 'formtastic', '>= 2.1.0'
+gem 'will_paginate', '~> 3.0.5'
 gem 'exception_notification', '~> 2.5.2'
 gem 'open_id_authentication'
 
@@ -57,7 +57,7 @@ group :test do
   gem 'cucumber-websteps', :require => false
   gem 'factory_girl'
   gem 'rspec'
-  gem 'nokogiri', '~> 1.5.0'
+  gem 'nokogiri', '~> 1.13.9'
   gem 'webrat'
 end
 
