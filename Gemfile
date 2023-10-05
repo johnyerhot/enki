@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '7.1.0'
 gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
@@ -9,8 +9,8 @@ gem 'newrelic_rpm'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails', '~> 5.0.8'
+  gem 'coffee-rails', '~> 4.2.2'
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -22,10 +22,10 @@ end
 platforms :jruby do
   gem 'activerecord-jdbcsqlite3-adapter'
   gem 'trinidad'
-  gem 'jruby-openssl'
+  gem 'jruby-openssl', '>= 0.9.5'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -43,9 +43,9 @@ gem 'rack-openid', :require => 'rack/openid'
 gem 'aaronh-chronic', :require => 'chronic' # Fixes for 1.9.2
 gem 'coderay'
 gem 'lesstile'
-gem 'formtastic'
+gem 'formtastic', '>= 2.1.0'
 gem 'will_paginate', '~> 3.0.2'
-gem 'exception_notification', '~> 2.5.2'
+gem 'exception_notification', '~> 2.6.0'
 gem 'open_id_authentication'
 
 # Bundle gems for the local environment. Make sure to
@@ -62,5 +62,5 @@ group :test do
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.9.0'
 end
