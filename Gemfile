@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.1'
+gem 'rails', '7.1.0'
 gem 'newrelic_rpm'
 
 # Bundle edge Rails instead:
@@ -10,7 +10,7 @@ gem 'newrelic_rpm'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'coffee-rails', '~> 4.2.2'
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -25,7 +25,7 @@ platforms :jruby do
   gem 'jruby-openssl'
 end
 
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.0.1'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -39,13 +39,13 @@ gem 'jquery-rails'
 # Bundle the extra gems:
 gem 'RedCloth', '~> 4.2.9', :require => 'redcloth'
 gem 'ruby-openid', :require => 'openid'
-gem 'rack-openid', :require => 'rack/openid'
+gem 'rack-openid', '>= 1.4.0', :require => 'rack/openid'
 gem 'aaronh-chronic', :require => 'chronic' # Fixes for 1.9.2
 gem 'coderay'
 gem 'lesstile'
 gem 'formtastic'
 gem 'will_paginate', '~> 3.0.2'
-gem 'exception_notification', '~> 2.5.2'
+gem 'exception_notification', '~> 2.6.0'
 gem 'open_id_authentication'
 
 # Bundle gems for the local environment. Make sure to
@@ -53,14 +53,14 @@ gem 'open_id_authentication'
 # and rake tasks are available in development mode:
 group :test do
   gem 'database_cleaner'
-  gem 'cucumber-rails',    :require => false
-  gem 'cucumber-websteps', :require => false
-  gem 'factory_girl'
+  gem 'cucumber-rails', '>= 1.3.0', :require => false
+  gem 'cucumber-websteps', '>= 0.10.0', :require => false
+  gem 'factory_girl', '>= 2.5.0'
   gem 'rspec'
   gem 'nokogiri', '~> 1.5.0'
   gem 'webrat'
 end
 
 group :development, :test do
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 2.9.0'
 end
